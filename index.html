@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Authority, PR and Search for Founders, Coaches and TEDx Speakers</title>
+<meta name="description" content="I help founders, coaches and TEDx speakers build authority that dominates search, through PR and media features. 99+ features and counting.">
+<meta property="og:title" content="Become the #1 voice in your category">
+<meta property="og:description" content="Reputation and PR strategy for founders, coaches and TEDx speakers.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"","jobTitle":"Founder & CEO","worksFor":{"@type":"Organization","name":""},"address":{"@type":"PostalAddress","addressLocality":"Kolkata","addressCountry":"IN"},"sameAs":["[FILL: LinkedIn URL]","[FILL: Instagram URL]"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+:root{
+  --ink:#0F1E33; --fog:#EDF1F6; --gold:#E0A82E; --slate:#4D5D73; --white:#fff; --line:#CBD5E1;
+  --head:'Bricolage Grotesque',system-ui,sans-serif; --body:'Instrument Sans',system-ui,sans-serif;
+  --wrap:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:var(--body);font-size:17px;line-height:1.6;color:var(--white);background:var(--ink)}
+h1,h2,h3{font-family:var(--head);line-height:1.1;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+h2{font-size:clamp(30px,4.5vw,48px);font-weight:700;max-width:18ch}
+.lead{color:var(--slate);max-width:56ch;margin-top:16px}
+.fill{background:#FFF3CC;padding:0 4px;border-radius:3px}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:600;text-decoration:none;font-family:var(--body);transition:transform .15s,background .15s}
+.btn.gold{background:var(--gold);color:var(--ink)}
+.btn.gold:hover{transform:translateY(-2px);background:#EDB93F}
+.btn.ghost{border:2px solid var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--white)}
+
+/* header */
+header{position:sticky;top:16px;z-index:100;pointer-events:none;padding:0 24px}
+header .wrap{
+  pointer-events:auto;
+  max-width:1040px;
+  margin:0 auto;
+  background:rgba(15,30,51,0.65);
+  backdrop-filter:blur(16px) saturate(180%);
+  -webkit-backdrop-filter:blur(16px) saturate(180%);
+  color:#fff;
+  border-radius:999px;
+  padding:0 32px;
+  height:64px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  box-shadow:0 16px 40px rgba(0,0,0,0.18), inset 0 1px 1px rgba(255,255,255,0.25);
+  border:1px solid rgba(255,255,255,0.2);
+}
+.logo{font-family:var(--head);font-weight:800;font-size:20px;text-decoration:none;color:#fff}
+nav{display:flex;gap:14px;align-items:center}
+nav a{text-decoration:none;font-weight:500;font-size:15px;padding:4px 10px;border-radius:999px;color:#9FB0C6;transition:color .15s,background .15s}
+nav a:hover, nav a.active{color:#fff;background:rgba(255,255,255,0.05)}
+nav .btn{
+  padding:10px 22px;
+  border-radius:999px;
+  border:1.5px solid rgba(255,255,255,0.3);
+  background:transparent;
+  color:#fff;
+  font-weight:600;
+  transition:all .15s;
+}
+nav .btn:hover{background:#fff;color:var(--ink);border-color:#fff}
+@media(max-width:820px){nav a:not(.btn){display:none}}
+
+/* hero */
+.hero{min-height:calc(100vh - 68px);display:flex;align-items:center;justify-content:center;padding:60px 0;text-align:center;background:var(--ink);position:relative;overflow:hidden;}
+.hero::before{content:"";position:absolute;top:-20%;left:50%;transform:translateX(-50%);width:700px;height:500px;background:radial-gradient(circle, rgba(224,168,46,0.14) 0%, rgba(15,30,51,0) 70%);pointer-events:none;z-index:0;}
+.hero .wrap{width:100%;position:relative;z-index:1;}
+.hero .grid{display:flex;justify-content:center;align-items:center}
+.hero h1{font-size:clamp(48px,8.5vw,96px);font-weight:800;color:var(--white)}
+.hero p{font-size:22px;color:#B6C4D6;max-width:58ch;margin:28px auto 32px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+.portrait{aspect-ratio:4/5;background:var(--ink);border-radius:20px;display:grid;place-items:center;color:#9FB0C6;text-align:center;padding:24px}
+.hero-in{animation:rise .8s ease both;margin:0 auto}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.proof{margin-top:56px;padding-top:28px;border-top:1px solid rgba(255,255,255,0.12);display:flex;gap:40px;flex-wrap:wrap;align-items:center}
+.proof strong{font-family:var(--head);font-size:44px;color:var(--white);line-height:1}
+.proof span{color:#B6C4D6;max-width:14ch;display:block;font-size:15px}
+.logos{display:flex;gap:28px;flex-wrap:wrap;color:#B6C4D6;font-weight:600}
+@media(max-width:820px){.hero .grid{grid-template-columns:1fr}.portrait{max-width:320px}}
+
+/* steps roadmap */
+.steps{background:#FFFFFF;color:var(--ink);padding:96px 0;}
+.steps .lead{color:var(--slate)}
+.road{position:relative;margin-top:64px;max-width:1040px;margin-left:auto;margin-right:auto;padding:20px 0;}
+.road::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:2px;background:#E2D9C5;border-radius:3px;transform:translateX(-50%);}
+.road .fillbar{position:absolute;left:50%;top:0;width:2px;height:0;background:var(--gold);border-radius:3px;transform:translateX(-50%);z-index:1;}
+
+.step{
+  position:relative;
+  width:calc(50% - 48px);
+  margin-bottom:40px;
+  background:#F0F6FF;
+  border:1.5px solid #CBDDF2;
+  border-radius:20px;
+  padding:24px 28px;
+  box-shadow:0 10px 30px rgba(15,30,51,0.06);
+  transition:all .25s ease;
+}
+.step:hover{
+  border-color:var(--gold);
+  box-shadow:0 14px 36px rgba(224,168,46,0.22);
+}
+.step[open]{
+  border-color:var(--gold);
+  background:#E5F0FF;
+}
+
+.step:nth-of-type(odd){
+  margin-left:0;
+  margin-right:auto;
+}
+.step:nth-of-type(even){
+  margin-left:auto;
+  margin-right:0;
+}
+
+.step .num{
+  position:absolute;
+  top:24px;
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  background:#0F1E33;
+  color:#FFFFFF;
+  border:3px solid #CBDDF2;
+  display:grid;
+  place-items:center;
+  font-family:var(--head);
+  font-size:18px;
+  font-weight:700;
+  transition:all .2s ease;
+  z-index:2;
+}
+
+.step:nth-of-type(odd) .num{
+  right:-48px;
+  transform:translateX(50%);
+}
+
+.step:nth-of-type(even) .num{
+  left:-48px;
+  transform:translateX(-50%);
+}
+
+.step[open] .num, .step.done .num{
+  background:var(--gold);
+  border-color:var(--gold);
+  color:var(--ink);
+  box-shadow:0 0 16px rgba(224,168,46,0.4);
+}
+
+.step summary{
+  list-style:none;
+  cursor:pointer;
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  align-items:center;
+}
+.step summary::-webkit-details-marker{display:none}
+.step h3{font-size:22px;font-weight:700;color:#0F1E33;line-height:1.3;}
+.step summary::after{content:"+";font-size:26px;color:var(--gold);transition:transform .2s;font-weight:600;flex-shrink:0;}
+.step[open] summary::after{transform:rotate(45deg)}
+
+.step .body{padding:16px 0 4px;color:var(--slate);font-size:16px;line-height:1.6;}
+.step .body p+p{margin-top:10px}
+.step .body b{color:#0F1E33}
+
+.steps .cta{margin-top:56px;text-align:center;}
+
+@media(max-width:820px){
+  .road{padding-left:56px;max-width:100%;}
+  .road::before{left:20px;transform:none;}
+  .road .fillbar{left:20px;transform:none;}
+  .step{width:100%!important;margin-left:0!important;margin-right:0!important;}
+  .step .num{left:-56px!important;right:auto!important;transform:none!important;}
+}
+
+/* work */
+#work{background:var(--ink);color:var(--white)}
+#work h2{color:var(--white)}
+#work .lead{color:#B6C4D6}
+.work-list{margin-top:48px;border-top:2px solid var(--ink)}
+.work-item{display:grid;grid-template-columns:1fr 2fr auto;gap:32px;padding:32px 0;border-bottom:1px solid var(--line);align-items:start}
+.work-item:nth-child(even){background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent)}
+.work-item h3{font-size:24px;font-weight:700}
+.work-item p{color:var(--slate)}
+.tag{font-size:14px;font-weight:600;border:1.5px solid var(--ink);border-radius:999px;padding:4px 14px;white-space:nowrap}
+.featured{margin-top:48px;display:flex;gap:16px 32px;flex-wrap:wrap;align-items:center;color:var(--slate);font-weight:600}
+@media(max-width:820px){.work-item{grid-template-columns:1fr;gap:10px}}
+
+/* video marquee slider */
+.v-marquee-wrap {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+  margin-top: 40px;
+  padding: 12px 0;
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+.v-marquee-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: marqueeScroll 16s linear infinite;
+}
+
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.v-card {
+  position: relative;
+  width: 270px;
+  height: 480px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #0A1320;
+  flex-shrink: 0;
+  box-shadow: 0 16px 36px rgba(0,0,0,0.22);
+  border: 1px solid rgba(255,255,255,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.v-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 24px 48px rgba(0,0,0,0.38);
+}
+.v-card video, .v-card iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: 0;
+}
+.v-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15,30,51,0.65) 0%, transparent 35%, transparent 60%, rgba(15,30,51,0.92) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  pointer-events: none;
+}
+.v-tag {
+  align-self: flex-start;
+  background: rgba(15,30,51,0.75);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.2);
+  text-transform: uppercase;
+  font-family: var(--body);
+}
+.v-title {
+  color: #fff;
+  font-family: var(--head);
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+/* results */
+.results{background:var(--white)}
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px;margin-top:48px}
+.nums strong{display:block;font-family:var(--head);font-size:clamp(44px,6vw,68px);line-height:1;color:var(--ink);border-bottom:4px solid var(--gold);padding-bottom:12px;margin-bottom:12px}
+.nums span{color:var(--slate)}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;margin-top:72px}
+blockquote{font-size:20px;line-height:1.5;border-left:4px solid var(--gold);padding-left:24px}
+blockquote footer{margin-top:14px;font-size:15px;color:var(--slate);border:0;position:static;background:none;backdrop-filter:none}
+.case{margin-top:72px;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:2px solid var(--ink)}
+.case div{padding:28px;border-right:2px solid var(--ink)}
+.case div:last-child{border-right:0;background:var(--ink);color:var(--white)}
+.case h3{font-size:20px;margin-bottom:8px}
+@media(max-width:820px){.case{grid-template-columns:1fr}.case div{border-right:0;border-bottom:2px solid var(--ink)}}
+@media(max-width:640px){.screenshot-grid{grid-template-columns:1fr!important}}
+
+
+/* final cta */
+.final{background:var(--ink);color:var(--white);text-align:left}
+.final h2{max-width:20ch}
+.final p{color:#B6C4D6;margin:18px 0 32px;max-width:52ch}
+footer.site{padding:36px 0;background:var(--ink);color:#8FA1BA;font-size:15px;border-top:1px solid #2A3C57;position:static;backdrop-filter:none}
+footer.site .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer.site a{margin-left:18px;text-decoration:none}
+
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="index.html#top" id="nav-logo">BecameNo1</a>
+    <button class="nav-toggle" aria-label="Toggle Navigation" id="mobile-nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav aria-label="Main" id="main-nav">
+      <a href="#top" id="nav-link-home">Home</a>
+      <a href="#steps" id="nav-link-steps">Our steps</a>
+      <a href="#work" id="nav-link-work">Work</a>
+      <a href="#results" id="nav-link-results">Results</a>
+      <a href="how-it-works.html" id="nav-link-how" class="gold-text-effect">How It Works</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero" id="about">
+  <div class="wrap">
+    <div class="grid">
+      <div class="hero-in">
+        <h1>Become the <span style="color: #FF3B30; border-bottom: 6px solid var(--gold); padding-bottom: 4px; display: inline-block;">#1 voice</span><br>in your category.</h1>
+        <p>The best opportunities never get advertised. They're offered to the best-known authorities in their space. Become one of them. We design your authority roadmap and guide you through executing it. Limited to ambitious, exceptionally bright minds.</p>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="steps" id="steps">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:20px;"><span style="color:#B48008;background:#FFF9E6;border:2px solid #EAB308;font-weight:800;letter-spacing:3px;font-size:18px;text-transform:uppercase;padding:8px 26px;border-radius:999px;display:inline-block;box-shadow:0 6px 18px rgba(234,179,8,0.18);">⚡ WHY NOW</span></div>
+    <h2 style="font-size:clamp(34px,5vw,54px);font-weight:800;color:#0F1E33;max-width:24ch;line-height:1.3;margin-bottom:40px;letter-spacing:-0.02em;">The opportunity you're <span style="color:#B48008;font-weight:900;">hesitating on</span> is going to <span style="background:#FFF3CC;color:#854D0E;border:1.5px solid #FDE047;padding:3px 16px;border-radius:14px;display:inline-block;font-weight:800;box-shadow:0 4px 14px rgba(234,179,8,0.15);">someone else right now.</span></h2>
+    <h3 style="font-size:28px;font-weight:700;color:var(--gold);margin-top:32px;">Build a personal brand that actually pays.</h3>
+    <p class="lead">Pick your starting line and your finish line – the roadmap fills in the milestones.</p>
+    <div class="road" id="road">
+      <div class="fillbar" id="fillbar"></div>
+
+      <details class="step" open>
+        <summary><span class="num">1</span><h3>Deep Analysis of Your Expertise</h3></summary>
+        <div class="body">
+          <p style="font-size:15px;color:var(--slate);margin-bottom:10px;line-height:1.6;">
+            We analyze your experience, knowledge, unique strengths, and key topics to identify what you should be known for.<br>Then we turn those insights into strong content pillars and ideas that showcase your authority.
+          </p>
+          <video autoplay loop muted playsinline style="width:100%;height:auto;border-radius:12px;margin-top:12px;display:block;border:1px solid #CBDDF2;">
+            <source src="deep.mp4" type="video/mp4">
+          </video>
+        </div>
+      </details>
+
+      <details class="step" open>
+        <summary><span class="num">2</span><h3>Define Your Positioning</h3></summary>
+        <div class="body">
+          <video autoplay loop muted playsinline style="width:100%;height:auto;border-radius:12px;margin-top:12px;display:block;border:1px solid #CBDDF2;">
+            <source src="samplevideo11.mp4" type="video/mp4">
+          </video>
+        </div>
+      </details>
+
+      <details class="step" open>
+        <summary><span class="num">3</span><h3>Build Your Content Strategy</h3></summary>
+        <div class="body">
+          <p style="font-size:15px;color:var(--slate);margin-bottom:10px;line-height:1.6;">
+            We create a clear content strategy around your expertise, audience, and business goals.<br>Then we turn your knowledge into content ideas that build authority and attract the right audience.
+          </p>
+          <video autoplay loop muted playsinline style="width:100%;height:auto;border-radius:12px;margin-top:12px;display:block;border:1px solid #CBDDF2;">
+            <source src="samplevideo10.mp4" type="video/mp4">
+          </video>
+        </div>
+      </details>
+
+      <details class="step" open>
+        <summary><span class="num">4</span><h3>Profile Optimization</h3></summary>
+        <div class="body">
+          <p style="font-size:15px;color:var(--slate);margin-bottom:10px;line-height:1.6;">
+            We’ll professionally optimize your LinkedIn, Instagram, YouTube, and other profiles so your positioning, bio, visuals, and messaging clearly reflect your expertise.
+          </p>
+          <p style="font-size:14px;color:#475569;background:#F1F5F9;padding:12px 16px;border-radius:10px;border-left:4px solid var(--gold);margin-top:10px;line-height:1.5;font-weight:500;">
+            💡 This helps you build credibility, make a stronger first impression, and turn profile visitors into potential clients.
+          </p>
+        </div>
+      </details>
+
+      <details class="step" open>
+        <summary><span class="num">5</span><h3>Personalized Video Scripts</h3></summary>
+        <div class="body">
+          <p style="font-size:15px;color:var(--slate);margin-bottom:10px;line-height:1.5;">
+            Psychology-based video scripts designed around how your target audience thinks, feels, and makes decisions:
+          </p>
+          <video autoplay loop muted playsinline style="width:100%;height:auto;border-radius:12px;margin-top:12px;display:block;border:1px solid #CBDDF2;">
+            <source src="Script.mp4" type="video/mp4">
+          </video>
+          <div style="background:#0F1E33;color:#FFF;padding:18px;border-radius:14px;border:1px solid #CBDDF2;margin-top:16px;font-size:14px;box-shadow:0 8px 24px rgba(15,30,51,0.15);">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;border-bottom:1px solid rgba(255,255,255,0.12);padding-bottom:8px;">
+              <span style="background:var(--gold);color:#0F1E33;font-weight:800;padding:3px 10px;border-radius:6px;font-size:12px;letter-spacing:1px;text-transform:uppercase;">⚡ PSYCHOLOGY SCRIPT ENGINE</span>
+              <span style="color:#9FB0C6;font-size:12px;font-weight:600;">High-Retention Hooks & CTAs</span>
+            </div>
+            <div style="display:grid;gap:8px;">
+              <div style="background:rgba(255,255,255,0.06);padding:8px 12px;border-radius:8px;border-left:3px solid var(--gold);">
+                <strong style="color:var(--gold);">🪝 Attention-Grabbing Hook:</strong> Captures target audience in first 3 seconds.
+              </div>
+              <div style="background:rgba(255,255,255,0.06);padding:8px 12px;border-radius:8px;border-left:3px solid #60A5FA;">
+                <strong style="color:#60A5FA;">🧠 Audience Pain Point:</strong> Connects with emotional friction & decision drivers.
+              </div>
+              <div style="background:rgba(255,255,255,0.06);padding:8px 12px;border-radius:8px;border-left:3px solid #F472B6;">
+                <strong style="color:#F472B6;">📖 Curiosity Storytelling:</strong> Retains viewer interest with high-value narrative loops.
+              </div>
+              <div style="background:rgba(255,255,255,0.06);padding:8px 12px;border-radius:8px;border-left:3px solid #34D399;">
+                <strong style="color:#34D399;">🎯 Conversion Call-To-Action:</strong> Seamlessly converts ideal viewers into inbound clients.
+              </div>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <details class="step" open>
+        <summary><span class="num">6</span><h3>Premium Video Editing</h3></summary>
+        <div class="body">
+          <video autoplay loop muted playsinline style="width:100%;height:auto;border-radius:12px;margin-top:12px;display:block;border:1px solid #CBDDF2;">
+            <source src="samplevideo8mp4.mp4" type="video/mp4">
+          </video>
+        </div>
+      </details>
+
+      <details class="step" open>
+        <summary><span class="num">7</span><h3>Professional Reel Covers</h3></summary>
+        <div class="body">
+          <p style="font-size:15px;color:var(--slate);margin-bottom:10px;line-height:1.5;">
+            Professional and branded Reel/Short covers that keep your brand consistent and instantly recognizable:
+          </p>
+          <div style="background:#0F1E33;color:#FFF;padding:16px;border-radius:14px;border:1px solid #CBDDF2;margin-top:10px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+            <span style="background:rgba(224,168,46,0.15);color:var(--gold);border:1px solid var(--gold);padding:6px 14px;border-radius:999px;font-size:13px;font-weight:700;">✨ Branded Cover Design</span>
+            <span style="background:rgba(96,165,250,0.15);color:#60A5FA;border:1px solid #60A5FA;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:700;">📱 Omnichannel Cohesion</span>
+            <span style="background:rgba(244,114,182,0.15);color:#F472B6;border:1px solid #F472B6;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:700;">⚡ High Click-Through Rate</span>
+          </div>
+        </div>
+      </details>
+
+      <details class="step" open>
+        <summary><span class="num">8</span><h3>SEO & Content Optimization</h3></summary>
+        <div class="body">
+          <img src="SEO.png" alt="SEO Optimization" style="width:100%;height:auto;border-radius:12px;margin-top:12px;display:block;border:1px solid #CBDDF2;">
+        </div>
+      </details>
+
+      <details class="step" open>
+        <summary><span class="num">9</span><h3>Strategic Content Distribution</h3></summary>
+        <div class="body">
+          <video autoplay loop muted playsinline style="width:100%;height:auto;border-radius:12px;margin-top:12px;display:block;border:1px solid #CBDDF2;">
+            <source src="samplevideo9.mp4" type="video/mp4">
+          </video>
+        </div>
+      </details>
+    </div>
+    <div class="cta" style="margin-top:56px;text-align:center;">
+      <div style="background: linear-gradient(135deg, #090F19 0%, #0F172A 100%); border: 2px solid #D4AF37; border-radius: 24px; padding: 40px 24px; max-width: 820px; margin: 0 auto; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 30px rgba(212, 175, 55, 0.15); position: relative; overflow: hidden;">
+        <div style="position: absolute; top: -50%; left: 50%; transform: translateX(-50%); width: 400px; height: 300px; background: radial-gradient(circle, rgba(212,175,55,0.2) 0%, transparent 70%); pointer-events: none;"></div>
+        <div style="position: relative; z-index: 1;">
+          <span style="background: rgba(212,175,55,0.15); color: #D4AF37; border: 1.5px solid #D4AF37; font-weight: 800; letter-spacing: 2px; font-size: 13px; text-transform: uppercase; padding: 6px 20px; border-radius: 999px; display: inline-block; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(212,175,55,0.2);">
+            🎯 OUR MISSION
+          </span>
+          <p style="font-size: clamp(22px, 3.8vw, 34px); font-weight: 800; color: #FFFFFF; max-width: 28ch; margin: 0 auto; line-height: 1.35; letter-spacing: -0.01em;">
+            Our goal isn’t just views or followers<br>
+            <span style="color: #D4AF37; background: linear-gradient(90deg, #F59E0B, #FBBF24); -webkit-background-clip: text; -webkit-text-fill-color: transparent; border-bottom: 3px solid #D4AF37; padding-bottom: 4px; display: inline-block; margin-top: 8px;">
+              We turn your ideal audience into real paying clients.
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2>The work</h2>
+    <p class="lead">What I build for clients, and what they end up with.</p>
+  </div>
+  <div class="v-marquee-wrap">
+    <div class="v-marquee-track">
+      <!-- Set 1 -->
+      <div class="v-card">
+        <video autoplay loop muted playsinline>
+          <source src="Reatestate.mp4" type="video/mp4">
+        </video>
+        <div class="v-card-overlay">
+          <span class="v-tag">01 / REAL ESTATE</span>
+          <span class="v-title">REAL ESTATE CONTENT</span>
+        </div>
+      </div>
+      <div class="v-card">
+        <video autoplay loop muted playsinline>
+          <source src="samplevideo2.mp4" type="video/mp4">
+        </video>
+        <div class="v-card-overlay">
+          <span class="v-tag">02 / BRAND</span>
+          <span class="v-title">BRAND AUTHORITY</span>
+        </div>
+      </div>
+      <div class="v-card">
+        <video autoplay loop muted playsinline>
+          <source src="samplevideo4.mp4" type="video/mp4">
+        </video>
+        <div class="v-card-overlay">
+          <span class="v-tag">03 / EDITING</span>
+          <span class="v-title">HIGH-RETENTION EDIT</span>
+        </div>
+      </div>
+      <div class="v-card">
+        <video autoplay loop muted playsinline>
+          <source src="samplevideo5.mp4" type="video/mp4">
+        </video>
+        <div class="v-card-overlay">
+          <span class="v-tag">04 / SHOWCASE</span>
+          <span class="v-title">CREATIVE SHOWCASE</span>
+        </div>
+      </div>
+      <div class="v-card">
+        <video autoplay loop muted playsinline>
+          <source src="samplevideo6.mp4" type="video/mp4">
+        </video>
+        <div class="v-card-overlay">
+          <span class="v-tag">05 / PRODUCTION</span>
+          <span class="v-title">CINEMATIC REEL</span>
+        </div>
+      </div>
+
+      <!-- Set 2 (Duplicated for infinite seamless marquee loop) -->
+      <div class="v-card">
+        <video autoplay loop muted playsinline>
+          <source src="Reatestate.mp4" type="video/mp4">
+        </video>
+        <div class="v-card-overlay">
+          <span class="v-tag">01 / REAL ESTATE</span>
+          <span class="v-title">REAL ESTATE CONTENT</span>
+        </div>
+      </div>
+      <div class="v-card">
+        <video autoplay loop muted playsinline>
+          <source src="samplevideo2.mp4" type="video/mp4">
+        </video>
+        <div class="v-card-overlay">
+          <span class="v-tag">02 / BRAND</span>
+          <span class="v-title">BRAND AUTHORITY</span>
+        </div>
+      </div>
+      <div class="v-card">
+        <video autoplay loop muted playsinline>
+          <source src="samplevideo4.mp4" type="video/mp4">
+        </video>
+        <div class="v-card-overlay">
+          <span class="v-tag">03 / EDITING</span>
+          <span class="v-title">HIGH-RETENTION EDIT</span>
+        </div>
+      </div>
+      <div class="v-card">
+        <video autoplay loop muted playsinline>
+          <source src="samplevideo5.mp4" type="video/mp4">
+        </video>
+        <div class="v-card-overlay">
+          <span class="v-tag">04 / SHOWCASE</span>
+          <span class="v-title">CREATIVE SHOWCASE</span>
+        </div>
+      </div>
+      <div class="v-card">
+        <video autoplay loop muted playsinline>
+          <source src="samplevideo6.mp4" type="video/mp4">
+        </video>
+        <div class="v-card-overlay">
+          <span class="v-tag">05 / PRODUCTION</span>
+          <span class="v-title">CINEMATIC REEL</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="results" id="results" style="background:var(--white);padding:96px 0;">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:48px;">
+      <div style="display:inline-block;color:#B48008;background:#FFF9E6;border:1.5px solid #EAB308;font-weight:800;letter-spacing:3px;font-size:13px;text-transform:uppercase;padding:6px 20px;border-radius:999px;margin-bottom:16px;box-shadow:0 4px 14px rgba(234,179,8,0.15);">⚡ PROOF & ANALYTICS</div>
+      <h2 style="text-align:center;font-size:clamp(38px,5vw,58px);font-weight:900;color:#0F1E33;letter-spacing:-0.02em;margin:0 auto 14px;text-transform:uppercase;">
+        <span style="color:#B48008;border-bottom:4px solid #EAB308;padding-bottom:4px;display:inline-block;">RESULTS</span>
+      </h2>
+      <p class="lead" style="color:#334155;max-width:640px;margin:0 auto;font-size:20px;font-weight:500;line-height:1.5;">Real-time analytics proof demonstrating explosive viral reach and compounding authority.</p>
+    </div>
+
+    <!-- Key Metrics Highlight -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:24px;margin-bottom:48px;">
+      <div style="background:var(--ink);color:var(--white);padding:32px;border-radius:20px;box-shadow:0 12px 32px rgba(15,30,51,0.15);">
+        <span style="color:var(--gold);font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;display:block;margin-bottom:8px;">60-Min Realtime Spike</span>
+        <strong style="font-family:var(--head);font-size: clamp(34px,4vw,48px);font-weight:800;line-height:1;display:block;margin-bottom:8px;color:#fff;">146,680+</strong>
+        <span style="color:#B6C4D6;font-size:15px;">Views generated in 60 minutes</span>
+      </div>
+      <div style="background:var(--ink);color:var(--white);padding:32px;border-radius:20px;box-shadow:0 12px 32px rgba(15,30,51,0.15);">
+        <span style="color:var(--gold);font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;display:block;margin-bottom:8px;">48-Hour Velocity</span>
+        <strong style="font-family:var(--head);font-size: clamp(34px,4vw,48px);font-weight:800;line-height:1;display:block;margin-bottom:8px;color:#fff;">338,538+</strong>
+        <span style="color:#B6C4D6;font-size:15px;">Views generated in 48 hours</span>
+      </div>
+      <div style="background:var(--ink);color:var(--white);padding:32px;border-radius:20px;box-shadow:0 12px 32px rgba(15,30,51,0.15);">
+        <span style="color:var(--gold);font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;display:block;margin-bottom:8px;">Viral Impressions</span>
+        <strong style="font-family:var(--head);font-size: clamp(34px,4vw,48px);font-weight:800;line-height:1;display:block;margin-bottom:8px;color:#fff;">1.2M+</strong>
+        <span style="color:#B6C4D6;font-size:15px;">Total campaign impressions</span>
+      </div>
+      <div style="background:var(--ink);color:var(--white);padding:32px;border-radius:20px;box-shadow:0 12px 32px rgba(15,30,51,0.15);">
+        <span style="color:var(--gold);font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;display:block;margin-bottom:8px;">Audience Growth</span>
+        <strong style="font-family:var(--head);font-size: clamp(34px,4vw,48px);font-weight:800;line-height:1;display:block;margin-bottom:8px;color:#fff;">+45,123</strong>
+        <span style="color:#B6C4D6;font-size:15px;">New subscribers gained</span>
+      </div>
+    </div>
+
+    <!-- Analytics Proof Cards Grid (2 Columns Side-by-Side) -->
+    <div class="screenshot-grid" style="display:grid;grid-template-columns:repeat(2, 1fr);gap:24px;max-width:1080px;width:100%;margin:0 auto;">
+      
+      <!-- Card 1: proof5.png -->
+      <div class="shot-card" style="width:100%;border:1px solid #1E293B;border-radius:20px;overflow:hidden;background:#090F19;color:#fff;box-shadow:0 16px 40px rgba(0,0,0,0.2);transition:transform .2s;" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform='none'">
+        <div style="padding:12px;position:relative;background:#000;">
+          <img src="proof5.png" alt="Analytics & Channel Growth Proof" style="width:100%;max-height:520px;object-fit:contain;border-radius:12px;display:block;margin:0 auto;">
+        </div>
+        <div style="padding:16px 20px;background:#0F172A;border-top:1px solid #1E293B;color:#94A3B8;font-size:13px;font-weight:600;line-height:1.4;">
+          🎯 Analytics & Channel Growth Proof
+        </div>
+      </div>
+
+      <!-- Card 2: Igid.png -->
+      <div class="shot-card" style="width:100%;border:1px solid #1E293B;border-radius:20px;overflow:hidden;background:#090F19;color:#fff;box-shadow:0 16px 40px rgba(0,0,0,0.2);transition:transform .2s;" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform='none'">
+        <div style="padding:12px;position:relative;background:#000;">
+          <img src="Igid.png" alt="Instagram Profile & Audience Reach" style="width:100%;max-height:520px;object-fit:contain;border-radius:12px;display:block;margin:0 auto;">
+        </div>
+        <div style="padding:16px 20px;background:#0F172A;border-top:1px solid #1E293B;color:#94A3B8;font-size:13px;font-weight:600;line-height:1.4;">
+          🔥 Instagram Profile & Audience Reach
+        </div>
+      </div>
+
+      <!-- Card 3: proof6.png -->
+      <div class="shot-card" style="width:100%;border:1px solid #1E293B;border-radius:20px;overflow:hidden;background:#090F19;color:#fff;box-shadow:0 16px 40px rgba(0,0,0,0.2);transition:transform .2s;" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform='none'">
+        <div style="padding:12px;position:relative;background:#000;">
+          <img src="proof6.png" alt="Realtime Viewer Engagement" style="width:100%;max-height:520px;object-fit:contain;border-radius:12px;display:block;margin:0 auto;">
+        </div>
+        <div style="padding:16px 20px;background:#0F172A;border-top:1px solid #1E293B;color:#94A3B8;font-size:13px;font-weight:600;line-height:1.4;">
+          📊 Realtime Viewer Engagement & Performance
+        </div>
+      </div>
+
+      <!-- Card 4: proof8.jpeg -->
+      <div class="shot-card" style="width:100%;border:1px solid #1E293B;border-radius:20px;overflow:hidden;background:#090F19;color:#fff;box-shadow:0 16px 40px rgba(0,0,0,0.2);transition:transform .2s;" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform='none'">
+        <div style="padding:12px;position:relative;background:#000;">
+          <img src="proof8.jpeg" alt="Viral Impressions & Viewership Spike" style="width:100%;max-height:520px;object-fit:contain;border-radius:12px;display:block;margin:0 auto;">
+        </div>
+        <div style="padding:16px 20px;background:#0F172A;border-top:1px solid #1E293B;color:#94A3B8;font-size:13px;font-weight:600;line-height:1.4;">
+          🌟 Viral Impressions & Viewership Spike
+        </div>
+      </div>
+
+      <!-- Card 5: proof4.jpeg -->
+      <div class="shot-card" style="width:100%;border:1px solid #1E293B;border-radius:20px;overflow:hidden;background:#090F19;color:#fff;box-shadow:0 16px 40px rgba(0,0,0,0.2);transition:transform .2s;" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform='none'">
+        <div style="padding:12px;position:relative;background:#000;">
+          <img src="proof4.jpeg" alt="High Retention Performance Peak" style="width:100%;max-height:520px;object-fit:contain;border-radius:12px;display:block;margin:0 auto;">
+        </div>
+        <div style="padding:16px 20px;background:#0F172A;border-top:1px solid #1E293B;color:#94A3B8;font-size:13px;font-weight:600;line-height:1.4;">
+          ⚡ High Retention Performance Peak
+        </div>
+      </div>
+
+      <!-- Card 6: proof3.jpeg -->
+      <div class="shot-card" style="width:100%;border:1px solid #1E293B;border-radius:20px;overflow:hidden;background:#090F19;color:#fff;box-shadow:0 16px 40px rgba(0,0,0,0.2);transition:transform .2s;" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform='none'">
+        <div style="padding:12px;position:relative;background:#000;">
+          <img src="proof3.jpeg" alt="Compounding Traffic Velocity" style="width:100%;max-height:520px;object-fit:contain;border-radius:12px;display:block;margin:0 auto;">
+        </div>
+        <div style="padding:16px 20px;background:#0F172A;border-top:1px solid #1E293B;color:#94A3B8;font-size:13px;font-weight:600;line-height:1.4;">
+          📈 Compounding Traffic Velocity & Analytics
+        </div>
+      </div>
+
+      <!-- Card 7: proof2.jpeg -->
+      <div class="shot-card" style="width:100%;border:1px solid #1E293B;border-radius:20px;overflow:hidden;background:#090F19;color:#fff;box-shadow:0 16px 40px rgba(0,0,0,0.2);transition:transform .2s;" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform='none'">
+        <div style="padding:12px;position:relative;background:#000;">
+          <img src="proof2.jpeg" alt="Audience Conversion & Growth" style="width:100%;max-height:520px;object-fit:contain;border-radius:12px;display:block;margin:0 auto;">
+        </div>
+        <div style="padding:16px 20px;background:#0F172A;border-top:1px solid #1E293B;color:#94A3B8;font-size:13px;font-weight:600;line-height:1.4;">
+          🚀 Audience Conversion & Subscriber Growth
+        </div>
+      </div>
+
+      <!-- Card 8: proof1.jpeg -->
+      <div class="shot-card" style="width:100%;border:1px solid #1E293B;border-radius:20px;overflow:hidden;background:#090F19;color:#fff;box-shadow:0 16px 40px rgba(0,0,0,0.2);transition:transform .2s;" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform='none'">
+        <div style="padding:12px;position:relative;background:#000;">
+          <img src="proof1.jpeg" alt="Campaign Reach & Stats" style="width:100%;max-height:520px;object-fit:contain;border-radius:12px;display:block;margin:0 auto;">
+        </div>
+        <div style="padding:16px 20px;background:#0F172A;border-top:1px solid #1E293B;color:#94A3B8;font-size:13px;font-weight:600;line-height:1.4;">
+          💡 Campaign Reach & Viewers Traffic
+        </div>
+      </div>
+
+      <!-- Card 9: proof.jpeg -->
+      <div class="shot-card" style="width:100%;border:1px solid #1E293B;border-radius:20px;overflow:hidden;background:#090F19;color:#fff;box-shadow:0 16px 40px rgba(0,0,0,0.2);transition:transform .2s;" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform='none'">
+        <div style="padding:12px;position:relative;background:#000;">
+          <img src="proof.jpeg" alt="Authority & Conversion Proof" style="width:100%;max-height:520px;object-fit:contain;border-radius:12px;display:block;margin:0 auto;">
+        </div>
+        <div style="padding:16px 20px;background:#0F172A;border-top:1px solid #1E293B;color:#94A3B8;font-size:13px;font-weight:600;line-height:1.4;">
+          🏆 Authority & Brand Growth Results
+        </div>
+      </div>
+
+      <!-- Card 10: ig.jpeg -->
+      <div class="shot-card" style="width:100%;border:1px solid #1E293B;border-radius:20px;overflow:hidden;background:#090F19;color:#fff;box-shadow:0 16px 40px rgba(0,0,0,0.2);transition:transform .2s;" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform='none'">
+        <div style="padding:12px;position:relative;background:#000;">
+          <img src="ig.jpeg" alt="Instagram Dashboard & Analytics" style="width:100%;max-height:520px;object-fit:contain;border-radius:12px;display:block;margin:0 auto;">
+        </div>
+        <div style="padding:16px 20px;background:#0F172A;border-top:1px solid #1E293B;color:#94A3B8;font-size:13px;font-weight:600;line-height:1.4;">
+          📸 Instagram Dashboard & Professional Analytics
+        </div>
+      </div>
+
+      <!-- Card 11: samplevideo7.jpeg -->
+      <div class="shot-card" style="width:100%;border:1px solid #1E293B;border-radius:20px;overflow:hidden;background:#090F19;color:#fff;box-shadow:0 16px 40px rgba(0,0,0,0.2);transition:transform .2s;" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform='none'">
+        <div style="padding:12px;position:relative;background:#000;">
+          <img src="samplevideo7.jpeg" alt="High-Retention Content Showcase" style="width:100%;max-height:520px;object-fit:contain;border-radius:12px;display:block;margin:0 auto;">
+        </div>
+        <div style="padding:16px 20px;background:#0F172A;border-top:1px solid #1E293B;color:#94A3B8;font-size:13px;font-weight:600;line-height:1.4;">
+          🎬 High-Retention Content & Reel Cover Proof
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>&copy; 2023 Personal Brand Strategy. All rights reserved.</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var road=document.getElementById('road'), bar=document.getElementById('fillbar');
+  var steps=road.querySelectorAll('.step');
+  function update(){
+    var r=road.getBoundingClientRect(), vh=window.innerHeight;
+    var p=Math.min(Math.max((vh*0.6-r.top)/r.height,0),1);
+    bar.style.height=(p*100)+'%';
+    steps.forEach(function(s){
+      var sr=s.getBoundingClientRect();
+      s.classList.toggle('done', sr.top < vh*0.6);
+    });
+  }
+  window.addEventListener('scroll',update,{passive:true});
+  window.addEventListener('resize',update);
+  road.addEventListener('toggle',update,true);
+  update();
+})();
+</script>
+</body>
+</html>
